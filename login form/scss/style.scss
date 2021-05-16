@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading--primary-3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__card {
+    padding: 5rem;
+    width: 25%;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.103),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 7px;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    padding: 1.2rem 0;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+  
+    &::-webkit-input-placeholder {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.button {
+  margin-top: 2rem;
+}
+
+.btn {
+  width: 10rem;
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.2rem;
+    font-size: 1rem;
+    color: seashell;
+    font-size: 1.4rem;
+    border-radius: 0.7rem;
+    text-align: center;
+  }
+
+  &--primary {
+    background-color: royalblue;
+  }
+
+  &--danger {
+    background-color: red;
+  }
+}
