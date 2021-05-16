@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+.section-review {
+  height: 100vh;
+  padding: 10rem;
+}
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.review__card {
+  max-width: 30rem;
+  -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.007), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.007), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 7px;
+  padding: 2rem;
+  border: 1px solid #1b1938;
+}
+
+.review__card:hover {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  cursor: pointer;
+}
+
+.review__quote {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #090b1a;
+}
+
+.review__description {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  color: #090b1a;
+}
+
+.review__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review__user--img {
+  width: 100% auto;
+  border-radius: 20rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  border: 2px solid #090b1a;
+}
+
+.review__user__name {
+  color: #090b1a;
+}
+
+.attribution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
