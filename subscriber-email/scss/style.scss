@@ -24,9 +24,10 @@ body {
 .heading--primary-3 {
   font-size: 25px;
   font-weight: 400;
+  margin-bottom: 2rem;
 }
 
-.forms {
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,9 +35,11 @@ body {
 
   &__card {
     padding: 5rem;
-    width: 25%;
-    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.103), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.103),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 7px;
+    width: 50rem;
+    max-width: 70rem;
   }
 
   &__group {
@@ -49,29 +52,32 @@ body {
     padding: 1.2rem 0;
   }
 
-  &__input{
+  &__input {
     width: 100%;
-    padding: .7rem;
+    padding: 1.4rem;
     font-size: 1.5rem;
-    border: 1px solid rgb(0, 0, 0);
-    
+    border-radius: 5px;
+    border: 0.2px solid rgb(226, 223, 223);
 
     &::-webkit-input-placeholder {
       font-size: 1.5rem;
     }
+
+    &:focus {
+      outline: none;
+      border: 0.5px solid black;
+      border-radius: 5px;
+    }
   }
 }
-
-
-
 
 .button {
   margin-top: 2rem;
 }
 
 .btn {
- 
-  width: 10rem;
+  width: 100%;
+
   &:link,
   &:visited {
     display: inline-block;
@@ -80,7 +86,7 @@ body {
     font-size: 1rem;
     color: seashell;
     font-size: 1.4rem;
-    border-radius: .7rem;
+    border-radius: 0.7rem;
     text-align: center;
   }
 

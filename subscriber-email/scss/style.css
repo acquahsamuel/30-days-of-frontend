@@ -24,9 +24,10 @@ body {
 .heading--primary-3 {
   font-size: 25px;
   font-weight: 400;
+  margin-bottom: 2rem;
 }
 
-.forms {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,15 +40,16 @@ body {
   height: 100vh;
 }
 
-.forms__card {
+.form__card {
   padding: 5rem;
-  width: 25%;
   -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.103), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.103), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 7px;
+  width: 50rem;
+  max-width: 70rem;
 }
 
-.forms__group {
+.form__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,20 +59,27 @@ body {
           flex-direction: column;
 }
 
-.forms__label {
+.form__label {
   font-size: 1.5rem;
   padding: 1.2rem 0;
 }
 
-.forms__input {
+.form__input {
   width: 100%;
-  padding: .7rem;
+  padding: 1.4rem;
   font-size: 1.5rem;
-  border: 1px solid black;
+  border-radius: 5px;
+  border: 0.2px solid #e2dfdf;
 }
 
-.forms__input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder {
   font-size: 1.5rem;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 0.5px solid black;
+  border-radius: 5px;
 }
 
 .button {
@@ -78,7 +87,7 @@ body {
 }
 
 .btn {
-  width: 10rem;
+  width: 100%;
 }
 
 .btn:link, .btn:visited {
@@ -88,7 +97,7 @@ body {
   font-size: 1rem;
   color: seashell;
   font-size: 1.4rem;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   text-align: center;
 }
 
