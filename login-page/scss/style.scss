@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+$font-family-inter: "Inter", sans-serif;
+$font-family-lexend: "Lexend Deca", sans-serif;
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading--primary-3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__card {
+    padding: 5rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.103),
+      0 6px 20px 0 rgba(0, 0, 0, 0.027);
+    border-radius: 7px;
+    width: 50rem;
+    max-width: 70rem;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    padding: 1.2rem 0;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 0.2px solid rgb(226, 223, 223);
+
+    &::-webkit-input-placeholder {
+      font-size: 1.5rem;
+    }
+
+    &:focus {
+      outline: none;
+      border: 0.5px solid black;
+      border-radius: 5px;
+    }
+  }
+}
+
+.button {
+  margin-top: 2rem;
+}
+
+.btn {
+  width: 10rem;
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.2rem;
+    font-size: 1rem;
+    color: seashell;
+    font-size: 1.4rem;
+    border-radius: 0.7rem;
+    text-align: center;
+  }
+
+  &--primary {
+    background-color: royalblue;
+  }
+
+  &--danger {
+    background-color: red;
+  }
+}
