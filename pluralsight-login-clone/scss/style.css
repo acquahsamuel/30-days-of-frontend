@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700 &display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-split--left {
+  left: 0;
+  width: 35%;
+  padding: 19px;
+  background-color: rgba(0, 0, 0, 0.945);
+  color: white;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-split--left__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.login-split--left__h3 {
+  margin-left: 1rem;
+}
+
+.login-split--left__img {
+  width: 50px;
+}
+
+.login-split--right {
+  right: 0;
+  width: 65%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(3, 0, 0, 0.8))), url("../images/login-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(3, 0, 0, 0.8)), url("../images/login-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.heading__h2 {
+  text-transform: capitalize;
+  padding: 9px;
+}
+
+.heading__para {
+  padding: 12px;
+  text-decoration: underline;
+}
+
+.form {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__group {
+  margin-bottom: 1rem;
+}
+
+.form__label {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(67, 80, 93, 0.911);
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-weight: 100;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  color: whitesmoke;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.btn--dark {
+  background-color: #0075ac;
+}
+
+.btn--gray {
+  background-color: #4b4d4e;
+}
+
+.btn--forgot-password {
+  color: #0075ac;
+  text-align: center;
+  padding: 0.7rem;
+}
+
+.btn--sign-in-with {
+  color: #0075ac;
+  text-align: center;
+  padding: 0.7rem;
+}
+
+@media screen and (max-width: 600px) {
+  .login-split--left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+  }
+  .login-split--right {
+    display: none;
+  }
+  .btn--sign-in-with {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

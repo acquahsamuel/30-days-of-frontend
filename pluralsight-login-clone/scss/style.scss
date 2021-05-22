@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700 &display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+$font-family-inter: "Inter", sans-serif;
+$font-family-lexend: "Lexend Deca", sans-serif;
+
+$color-primary-light-200: rgba(0, 0, 0, 0.945);
+$color-primary-light-300: rgba(3, 0, 0, 0.979);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-lexend;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--left {
+    left: 0;
+    width: 35%;
+    padding: 19px;
+    background-color: $color-primary-light-200;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    &__h3 {
+      margin-left: 1rem;
+    }
+
+    &__img {
+      width: 50px;
+    }
+  }
+
+  &--right {
+    right: 0;
+    width: 65%;
+    background-image: linear-gradient(
+        rgba($color-primary-light-200, 0.3),
+        rgba($color-primary-light-300, 0.8)
+      ),
+      url("../images/login-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.heading__h2 {
+  text-transform: capitalize;
+  padding: 9px;
+}
+
+.heading__para {
+  padding: 12px;
+  text-decoration: underline;
+}
+
+.form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__group {
+    margin-bottom: 1rem;
+  }
+
+  &__label {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgba(67, 80, 93, 0.911);
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: 100;
+
+    &:focus {
+      outline: none;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  color: whitesmoke;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+
+  &--dark {
+    background-color: rgb(0, 117, 172);
+  }
+
+  &--gray {
+    background-color: rgb(75, 77, 78);
+  }
+
+  &--forgot-password {
+    color: rgb(0, 117, 172);
+    text-align: center;
+    padding: 0.7rem;
+  }
+
+  &--sign-in-with {
+    color: rgb(0, 117, 172);
+    text-align: center;
+    padding: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-split {
+    &--left {
+      flex: 1;
+      width: 100%;
+    }
+
+    &--right {
+      display: none;
+    }
+  }
+
+  .btn--sign-in-with {
+    font-size: 0.8rem;
+  }
+}
