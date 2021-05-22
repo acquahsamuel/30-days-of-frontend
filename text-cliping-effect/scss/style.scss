@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+$font-family-inter: "Inter", sans-serif;
+$font-family-lexend: "Lexend Deca", sans-serif;
+
+$very-dark-blue: hsl(233, 47%, 7%);
+$dark-desaturated-blue: hsl(244, 38%, 16%);
+$soft-violet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+
+$slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+$slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-inter;
+  line-height: 1.5;
+}
+
+.section-review {
+  height: 100vh;
+  padding: 10rem;
+  // background-image: linear-gradient(to right, $dark-desaturated-blue, $soft-violet);
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background: black;
+
+  &__h2 {
+    font-size: 5rem;
+    background-image: linear-gradient(to right, $very-dark-blue, $soft-violet);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.social-handle {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__lists {
+    padding: 2rem;
+    list-style: none;
+  
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+}
