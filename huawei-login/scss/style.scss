@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.heading__h2 {
+  font-family: PingFangSC-Semibold;
+  font-size: 3.2rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+  margin-top: 12rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 31rem;
+    max-width: 31rem;
+  }
+
+  &__list {
+    display: inline-block;
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgb(26, 21, 21);
+    font-size: 1.2rem;
+
+    &.active {
+      border-bottom: 2px solid red;
+      padding-bottom: 0.8rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  &__card {
+    width: 45rem;
+    max-width: 70rem;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 0.2px solid rgb(226, 223, 223);
+
+    &::-webkit-input-placeholder {
+      font-size: 1.5rem;
+    }
+
+    &:focus {
+      outline: none;
+      border: 0.5px solid black;
+      border-radius: 5px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    // justify-content: space-between;
+    padding-top: 2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 1.2rem;
+
+    &:not(:last-child) {
+      flex-grow: 2;
+    }
+  }
+}
+
+.button {
+  margin-top: 3rem;
+}
+
+.btn {
+  &:link,
+  &:visited {
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: seashell;
+    font-size: 1.4rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &--primary {
+    background-color: royalblue;
+  }
+
+  &--danger {
+    background-color: rgba(255, 0, 0, 0.541);
+  }
+}
